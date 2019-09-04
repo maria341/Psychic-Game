@@ -21,7 +21,7 @@ document.onkeyup = function(event) {
              playerChoices = [];
          }
          else {
-            if (playerGuess.includes(userGuess)) {
+            if (playerChoices.includes(userGuess)) {
              
              }
              else {
@@ -32,15 +32,15 @@ document.onkeyup = function(event) {
         }
          
         if (guessesLeft === 0) {
-            guessesLeft = 9;
             losses++;
+            guessesLeft = 9;
             playerChoices = [];
             
         } 
             
-             var html = "<h1>Psychic Game</h1>" + "<p>What letter I'm thinking of!</p>" +
+             var html = "<h1>Psychic Game</h1>" + "<h2>What letter I'm thinking of!</h2>" +
                     "<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>" +
-                    "<p>guessesLeft:" + guessesLeft + "</p>" + "<p>playerChoices:" + playerChoices.join(", ") + "</p>";
+                    "<p>Guesses Left:" + guessesLeft + "</p>" + "<p>Your Guesses so far:" + playerChoices.join(", ") + "</p>";
 
                     document.querySelector("#game").innerHTML = html;
         

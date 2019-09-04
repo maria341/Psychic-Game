@@ -1,6 +1,16 @@
-#wrapper {
-    color: #666666;
-    text-align: center;
+body {
     background-color: lightgray;
 }
 
+#wrapper {
+    color: #666666;
+    text-align: center;
+    background-color: #ffffff;
+    border: dotted;
+    max-width: 700px;
+    font-style: italic;
+    margin: auto;
+} 
+p {
+    font-size: 25px;
+}
